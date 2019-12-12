@@ -56,7 +56,73 @@ public class Contato{
 }
 
 //RESPOSTAS LOIANNE
+//CLASSES
+/*
+public class Lampada {
 
+    String modelo;
+    String tensao;
+    int potencia;
+    String cor;
+    String tipoLuz;
+    int garantiaMeses;
+    String[] tipos;
+    boolean tipoAbajur;
+
+}
+
+public class Livro {
+
+    String nome;
+    String autor;
+    int qtdPaginas;
+    int anoLancamento;
+    String isbn;
+}
+
+public class LivroDeBiblioteca {
+
+    String nome;
+    String autor;
+    int qtdPaginas;
+    int anoLancamento;
+    String isbn;
+
+    boolean emprestado;
+    Date dataEntrega;
+    String emprestadoA;
+}
+
+public class LivroLivraria {
+
+    String nome;
+    String autor;
+    int qtdPaginas;
+    int anoLancamento;
+    String isbn;
+    double preco;
+
+}
+
+public class ContaCorrente {
+
+    String numero;
+    String agencia;
+    boolean especial;
+    double limiteEspecial;
+    double saldo;
+}
+
+public class Contato {
+
+    String nome;
+    String email;
+    String endereco;
+    String[] telefones;
+}
+*/
+
+//CLASSE MAIN
 //1
 /*
 public class Exer01 {
