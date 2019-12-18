@@ -21,20 +21,23 @@ public class E25A27{
 	String agencia;
 	double saldo;
 	boolean especial;
-	double chequeEspecial;
+	double chequeEspecial, cheEsp;
 	
 	double sacar(double saque){
-		if(saldo > 0 && saque <= saldo){
+		cheEsp = chequeEspecial;
+		if(saque <= saldo+chequeEspecial){
 			saldo = saldo - saque;
 			System.out.println("Voce sacou R$: " + saque);
-		}
-		if(saldo <= 0 && saque <= chequeEspecial){
-			System.out.println("Seu cheque especial e de R$: " + chequeEspecial);
-			saldo = chequeEspecial;
-			saldo = saldo -saque;
-			System.out.println("Voce sacou R$: " + saque);
-		}
+
+		}else {
+			System.out.println("O valor excede seu limite.");
+			}
+		/*if(saldo < 0 ){
+			cheEsp = cheEsp - saque;
+		}	*/
+		System.out.println("O seu limite: " + cheEsp);
 		return saldo;
+		
 	}
 	
 	double depositar(double deposito){

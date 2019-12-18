@@ -61,6 +61,18 @@ public class E25A27Teste{
 		sacar = conta.sacar(150.0);
 		saldo = conta.consultarSaldo();
 		System.out.println("Seu saldo e R$: " + saldo);
+		
+		sacar = conta.sacar(150.0);
+		saldo = conta.consultarSaldo();
+		System.out.println("Seu saldo e R$: " + saldo);
+		
+		sacar = conta.sacar(50.0);
+		saldo = conta.consultarSaldo();
+		System.out.println("Seu saldo e R$: " + saldo);
+		
+		sacar = conta.sacar(1.0);
+		saldo = conta.consultarSaldo();
+		System.out.println("Seu saldo e R$: " + saldo);
 		/*
 		especial = conta.verificarChequeEspecial();
 		System.out.println("Especial? \nR:" + especial);
