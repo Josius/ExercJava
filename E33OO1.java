@@ -29,55 +29,62 @@ public class E33OO1{
 		tipos[2] = "Lampião";
 	}
 	
+	
 	public String getModelo(){
 		return this.modelo;
 	}
-	public String getTensao(){
-		return this.tensao;
-	}
-	public int getPotencia(){
-		return this.potencia;
-	}
-	public String getCor(){
-		return this.cor;
-	}
-	public String getTipoLuz(){
-		return this.tipoLuz;
-	}
-	public int getGarantiaMeses(){
-		return this.garantiaMeses;
-	}
-	public String[] getTipos(){
-		return this.tipos;
-	}
-	private boolean isLigada(){
-		return this.ligada;
-	}
-	
 	public void setModelo(String modelo){
 		this.modelo = modelo;
+	}
+	
+	public String getTensao(){
+		return this.tensao;
 	}
 	public void setTensao(String tensao){
 		this.tensao = tensao;
 	}
+	
+	public int getPotencia(){
+		return this.potencia;
+	}
 	public void setPotencia(int potencia){
 		this.potencia = potencia;
+	}
+	
+	public String getCor(){
+		return this.cor;
 	}
 	public void setCor(String cor){
 		this.cor = cor;
 	}
+	
+	public String getTipoLuz(){
+		return this.tipoLuz;
+	}
 	public void setTipoLuz(String tipoLuz){
 		this.tipoLuz = tipoLuz;
+	}
+	
+	public int getGarantiaMeses(){
+		return this.garantiaMeses;
 	}
 	public void setGarantiaMeses(int garantiaMeses){
 		this.garantiaMeses = garantiaMeses;
 	}
+	
+	public String[] getTipos(){
+		return this.tipos;
+	}
 	public void setTipos(String[] tipos){
 		this.tipos = tipos;
 	}
+	
+	private boolean isLigada(){
+		return this.ligada;
+	}
 	public void setLigada(boolean ligada){
 		this.ligada = ligada;
-	}
+	}	
 	
 	private void ligar(){
 		this.ligada = true;
@@ -85,6 +92,7 @@ public class E33OO1{
 	private void desligar(){
 		this.ligada = false;
 	}
+	
 	
 	public void mudarEstado(){
 		if(ligada){
