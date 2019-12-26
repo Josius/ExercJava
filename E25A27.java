@@ -206,9 +206,20 @@ public class E25A27{
 	}
 	*/
 	//Jogo da Velha
-	char[][] jogoVelha = new char[3][3];
-    int jogada = 1;
-
+	char[][] jogoVelha;
+    int jogada;
+	
+	//UMA BOA PRATICA JAVA, COM RELACAO A AULA 29
+	/*
+	public E25A27(){
+		jogoVelha = new char[3][3];
+		jogada = 1;
+	}
+	
+	*/
+	
+	
+	
     boolean validarJogada(int linha, int coluna, char sinal) {
 
         if (jogoVelha[linha][coluna] == sinal || jogoVelha[linha][coluna] == 'O') {
