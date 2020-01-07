@@ -260,40 +260,7 @@ public class E25A27{
             return true;
         }
         return false;
-    }
-	
-	
-	
-	
-	
-	
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+    }	
 }
 
 
