@@ -30,8 +30,25 @@ public class E33OOExec{
 		lamp2.setGarantiaMeses(12);
 		lamp2.info();
 		*/
+		//RESOLUCAO LOIANE
 		
-		//EXERCICIO 2
+		
+        E33OO1 lampada = new E33OO1();
+
+        lampada.ligar();
+
+        lampada.mostrarEstado();
+
+        lampada.desligar();
+
+        lampada.mostrarEstado();
+
+        lampada.mudarEstado();
+
+        lampada.mostrarEstado();
+		
+		
+		//EXERCICIO 2 - SEMELHANTE A RESOLUCAO LOIANE
 		/*
 		E33OO2 conta = new E33OO2();
         conta.setNumero("123456");
@@ -80,7 +97,7 @@ public class E33OOExec{
 		}
 		*/
 		
-		//EXERCICIO 3
+		//EXERCICIO 3 - SEMELHANTE RESOLUCAO LOIANE
 		/*
 		Scanner ent = new Scanner(System.in);
 		
@@ -119,7 +136,7 @@ public class E33OOExec{
 		}
 		*/
 		
-		//EXERCICIO 4
+		//EXERCICIO 4 - SEMELHANTE RESOLUCAO LOIANE
 		
 		Scanner scan = new Scanner(System.in);
 

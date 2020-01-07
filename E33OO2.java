@@ -1,6 +1,6 @@
 //EXERCICIOS AULA 33
 
-//Exercicio 2 - Conta Corrente
+//Exercicio 2 - Conta Corrente - SEMELHANTE RESOLUCAO LOIANE
 public class E33OO2{
 	private String numero;
 	private String agencia;

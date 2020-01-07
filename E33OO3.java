@@ -1,6 +1,6 @@
 //EXERCICIOS AULA 33
 
-//Exercicio 3 - Aluno
+//Exercicio 3 - Aluno - SEMELHANTE RESOLUCAO LOIANE
 public class E33OO3{
 	private String nome;
 	private String matricula;

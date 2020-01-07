@@ -1,6 +1,6 @@
 //EXERCICIOS AULA 33
 
-//Exercicio 4 - Jogo da Velha
+//Exercicio 4 - Jogo da Velha - SEMELHANTE RESOLUCAO LOIANE
 public class E33OO4{
 	private char[][] jogoVelha;
     private int jogada;
