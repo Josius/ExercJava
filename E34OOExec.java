@@ -250,40 +250,35 @@ public class E34OOExec{
 		double valor;
 		boolean flag = false;
 		
-		System.out.println("Digite o tipo de conversão");
+		//System.out.println("Digite o tipo de conversão");
 		do{
 			
-			System.out.println("1 - minuto p/ segundo \n2 - hora p/ minuto \n3 - dia p/ hora \n4 - semana p/ dia \n5 - mes p/ dia \n6 - ano p/ dia ");
-			
+			System.out.println("\n1 - minuto p/ segundo \n2 - hora p/ minuto \n3 - dia p/ hora \n4 - semana p/ dia \n5 - mes p/ dia \n6 - ano p/ dia ");
+			System.out.println("\nDigite o tipo de conversão:	");
 			opcao = ent.nextInt();
 			if(opcao == 1 || opcao == 2 || opcao == 3 || opcao == 4 || opcao == 5 || opcao == 6){
 				flag = true;
 			}else{
-				System.out.println("Numero invalido, digite novamente");
+				System.out.println("\nOPCAO INVALIDA! DIGITE NOVAMENTE\n");
 			}
 		}while(!flag);
 		
-		System.out.println("Digite o valor a ser convertido");
+		System.out.println("Digite o valor a ser convertido:");
 		valor = ent.nextDouble();
 		
-		if(opcao == 1){
-			imprimir(E34OO6.minPseg(valor));
-			System.out.println(" segundos");
-		}else if(opcao == 2){
-			imprimir(E34OO6.horaPmin(valor));
-			System.out.println(" minutos");
-		}else if(opcao == 3){
-			imprimir(E34OO6.diaPhora(valor));
-			System.out.println(" horas");
-		}else if(opcao == 4){
-			imprimir(E34OO6.semPdia(valor));
-			System.out.println(" dias");
-		}else if(opcao == 5){
-			imprimir(E34OO6.mesPdia(valor));
-			System.out.println(" dias");
-		}else if(opcao == 6){
-			imprimir(E34OO6.anoPdia(valor));
-			System.out.println(" dias");
-		}		
+		switch(opcao){
+			case 1:imprimir(E34OO6.minPseg(valor));
+			System.out.println(" segundos"); break;
+			case 2:imprimir(E34OO6.horaPmin(valor));
+			System.out.println(" minutos");; break;
+			case 3:imprimir(E34OO6.diaPhora(valor));
+			System.out.println(" horas");; break;
+			case 4:imprimir(E34OO6.semPdia(valor));
+			System.out.println(" dias");; break;
+			case 5:imprimir(E34OO6.mesPdia(valor));
+			System.out.println(" dias");; break;
+			case 6:imprimir(E34OO6.anoPdia(valor));
+			System.out.println(" dias");; break;	
+		}
 	}
 }
