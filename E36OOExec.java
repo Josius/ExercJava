@@ -131,6 +131,8 @@ public class E36OOExec{
 			aluno.setNome(nomeAluno);
 			aluno.setMatricula(matAluno);
 			aluno.setNota(notas);
+			
+			alunos[i] = aluno;
 		}
 		
 		curso.setAluno(alunos);
