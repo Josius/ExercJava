@@ -98,7 +98,7 @@ public class E33OOExec{
 		*/
 		
 		//EXERCICIO 3 - SEMELHANTE RESOLUCAO LOIANE
-		/*
+		
 		Scanner ent = new Scanner(System.in);
 		
 		E33OO3 aluno = new E33OO3();
@@ -134,7 +134,7 @@ public class E33OOExec{
 				System.out.println("Disciplina " + aluno.getNomeDisciplina()[i] + " - reprovado");
 			}
 		}
-		*/
+		
 		
 		//EXERCICIO 4 - SEMELHANTE RESOLUCAO LOIANE
 		

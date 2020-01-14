@@ -1,8 +1,8 @@
-//Contatos
+//professor
 
-public class E36OO1Contatos{
+public class E36OO2Prof{
 	private String nome;
-	private String telefone;
+	private String departamento;
 	private String email;
 	
 	public String getNome(){
@@ -12,11 +12,11 @@ public class E36OO1Contatos{
 		this.nome = nome;
 	}
 	
-	public String getTelefone(){
-		return telefone;
+	public String getDepartamento(){
+		return departamento;
 	}
-	public void setTelefone(String telefone){
-		this.telefone = telefone;
+	public void setDepartamento(String departamento){
+		this.departamento = departamento;
 	}
 	
 	public String getEmail(){
@@ -27,8 +27,7 @@ public class E36OO1Contatos{
 	}
 	
 	public String obterInfo(){
-		return "Nome = " + nome + "; " +
-				"Telefone = " + telefone + "; " +
-				"E-mail = " + email + ".";
+		return "Professor = " + nome;
 	}
+	
 }
