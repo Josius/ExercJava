@@ -44,9 +44,25 @@ public class E36OO2{
 		if(alunos != null){
 			System.out.println("---Alunos---");
 			for(E36OO2Alun aluno : alunos){
-				info += aluno.obterInfo();//18:50
+				if(aluno != null){
+					info += aluno.obterInfo();
+					info += "\n";
+				}
+				
 			}
+			info += "\nMedia da turma = " + obterMediaTurma();
 		}
 		return info;
 	}
+	
+	public double obterMediaTurma(){
+		double soma = 0;
+		for(E36OO2Alun aluno : alunos){
+			if(aluno != null){
+				soma += aluno.obterMedia(); 
+			}
+		}
+		return soma/alunos.length;
+	}
+	
 }

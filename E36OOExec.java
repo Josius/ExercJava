@@ -134,5 +134,8 @@ public class E36OOExec{
 		}
 		
 		curso.setAluno(alunos);
+		
+		System.out.println(curso.obterInfo());
 	}
+	
 }

@@ -30,13 +30,13 @@ public class E36OO2Alun{
 		String info = "Nome Aluno = " + nome + "; ";
 		info += "Matricula = " + matricula + "; ";
 		info += "Notas: ";
-		
+		/*
 		double soma = 0;
 		
 		for(double nota : notas){
 			soma += nota;
 			info+= nota + " " ;
-		}
+		}*/
 		double media = soma/4;
 		info += "\n" + "Media = " + media + " - ";
 		if(media >= 7){
@@ -47,4 +47,14 @@ public class E36OO2Alun{
 		
 		return info;
 	}
+	
+	public double obterMedia(){
+		double soma = 0;
+		
+		for(double nota : notas){
+			soma += nota;
+		}
+		return soma/4;
+	}
+	
 }
