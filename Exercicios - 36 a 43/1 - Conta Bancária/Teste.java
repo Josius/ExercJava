@@ -1,31 +1,34 @@
 public class Teste{
 	public static void main(String[] args){
-		//ContaBancaria conta = new ContaBancaria();
+		ContaEspecial conta = new ContaEspecial();
+		//ContaPoupanca conta = new ContaPoupanca();
+		System.out.println(conta);
+		conta.sacar(0);
+		System.out.println("lim " + conta.getLimite());
+		System.out.println(conta);
+		conta.sacar(-1);
+		System.out.println("lim " + conta.getLimite());
+		System.out.println(conta);
+		conta.sacar(10);
+		System.out.println("lim " + conta.getLimite());
+		System.out.println(conta);
+		conta.depositar(10);
+		System.out.println("lim " + conta.getLimite());
+		System.out.println(conta);
+		conta.sacar(10);
+		conta.setLimite(100);
+		System.out.println(conta);
+		System.out.println("lim " + conta.getLimite());
+		conta.sacar(10);
+		System.out.println(conta);
+		System.out.println("lim " + conta.getLimite());
 		
-		/*conta.setSaldo(30);
-		System.out.println(conta.getSaldo());
-		conta.sacar(29.0);
-		System.out.println(conta.getSaldo());
-		conta.sacar(1.0);
-		System.out.println(conta.getSaldo());
-		conta.sacar(1.0);
-		System.out.println(conta.getSaldo());
-		conta.depositar(1.0);
-		System.out.println(conta.getSaldo());
-		conta.depositar(-1.0);
-		System.out.println(conta.getSaldo());
-		conta.depositar(-1.0);
-		System.out.println(conta.getSaldo());*/
-		ContaBancaria conta = new ContaPoupanca();
-//		ContaPoupanca cont = new ContaPoupanca();
-		conta.setSaldo(30);
-		System.out.println(conta.getSaldo());
-		conta.calcularNovoSaldo(5.0);
-		System.out.println(conta.getSaldo());
-		conta.depositar(31);
-		System.out.println(conta.getSaldo());
-		conta.calcularNovoSaldo(5.0);
-		System.out.println(conta.getSaldo());
+		
+		//conta.calcularNovoSaldo(15);
+		//System.out.println(conta);
+		
+		
+		
 		
 	}
 }

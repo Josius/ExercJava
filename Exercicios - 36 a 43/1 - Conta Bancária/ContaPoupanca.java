@@ -1,11 +1,7 @@
 public class ContaPoupanca extends ContaBancaria{
 	
 	private double diaRendimento;
-	
-	public ContaPoupanca(){
-		super();
-	}
-	
+		
 	public double getDiaRendimento(){
 		return diaRendimento;
 	}
@@ -13,13 +9,14 @@ public class ContaPoupanca extends ContaBancaria{
 		this.diaRendimento = diaRendimento;
 	}
 	
-	public ContaPoupanca(double diaRendimento){
-		this.diaRendimento = diaRendimento;
-	}
-	
 	public void calcularNovoSaldo(double txRendimento){
-		setDiaRendimento((txRendimento/100)*super.getSaldo() + super.getSaldo());
-		super.setSaldo(diaRendimento);
+		
+		diaRendimento = (txRendimento/100)*getSaldo() + getSaldo();
+		setSaldo(diaRendimento);
 	}
 	
+	public String toString(){
+		
+		return Double.toString(getSaldo());
+	}
 }

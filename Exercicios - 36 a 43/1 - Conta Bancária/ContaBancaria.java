@@ -1,18 +1,9 @@
-public abstract class ContaBancaria{
+public class ContaBancaria{
 	
 	private String nomeCliente;
 	private String numConta;
 	private double saldo;
-	
-	public ContaBancaria(){}
-	
-	public ContaBancaria(String nomeCliente, String numConta, double saldo){
-		super();
-		this.nomeCliente = nomeCliente;
-		this.numConta = numConta;
-		this.saldo = saldo;
-	}
-	
+		
 	public String getNomeCliente(){
 		return nomeCliente;
 	}
@@ -34,22 +25,23 @@ public abstract class ContaBancaria{
 		this.saldo = saldo;
 	}
 	
-	public double sacar(double valor){		
-		if(getSaldo() >= valor){
-			this.saldo -= valor;
-		}else{
+	public void sacar(double valor){
+		if((saldo >= valor) && (valor >= 0)){
+			saldo -= valor;
+		}
+		if((saldo <= 0) || (valor <= 0)){//pode ser que de conflito no saque da conta especial
+			System.out.println("Seu saldo e insuficiente");
+		}
+		else{
 			System.out.println("Saldo insuficiente");
 		}
-		return saldo;
 	}
 	
 	public void depositar(double valor){
-		if(valor < 0){
-			System.out.println("Valor de deposito invalido");
+		if(valor > 0){
+			saldo += valor;
 		}else{
-			this.saldo += valor;
+			System.out.println("Valor invalido");
 		}
 	}
-	
-	public abstract void calcularNovoSaldo(double txRendimento);
 }
