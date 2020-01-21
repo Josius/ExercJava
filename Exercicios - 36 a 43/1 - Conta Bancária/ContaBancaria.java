@@ -50,4 +50,6 @@ public abstract class ContaBancaria{
 			this.saldo += valor;
 		}
 	}
+	
+	public abstract void calcularNovoSaldo(double txRendimento);
 }

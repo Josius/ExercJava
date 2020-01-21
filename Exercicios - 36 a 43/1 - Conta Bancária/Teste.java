@@ -17,15 +17,15 @@ public class Teste{
 		conta.depositar(-1.0);
 		System.out.println(conta.getSaldo());*/
 		ContaBancaria conta = new ContaPoupanca();
-		ContaPoupanca cont = new ContaPoupanca();
+//		ContaPoupanca cont = new ContaPoupanca();
 		conta.setSaldo(30);
 		System.out.println(conta.getSaldo());
-		//conta.calcularNovoSaldo(5.0);
+		conta.calcularNovoSaldo(5.0);
 		System.out.println(conta.getSaldo());
-		cont.setSaldo(31);
-		System.out.println(cont.getSaldo());
-		cont.calcularNovoSaldo(5.0);
-		System.out.println(cont.getSaldo());
+		conta.depositar(31);
+		System.out.println(conta.getSaldo());
+		conta.calcularNovoSaldo(5.0);
+		System.out.println(conta.getSaldo());
 		
 	}
 }
