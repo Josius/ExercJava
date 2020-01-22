@@ -10,14 +10,30 @@ public class ContaEspecial extends ContaBancaria{
 	}
 	
 	public void sacar(double valor){
-		if((getSaldo() >= valor) && (valor >= 0)){
-			setSaldo(getSaldo()-valor);
-		}
-		if(limite >= valor){
-			if((getSaldo() < valor) || (getSaldo() <= 0)){
-				limite -= valor;
+		if(valor > 0){
+			if(getSaldo() >= valor){
+				setSaldo(getSaldo()-valor);
 			}
+			if(getSaldo() < valor){
+				if((getSaldo() > 0) && (limite >= valor)){
+					valor -= getSaldo();
+					setSaldo(0.0);
+					limite -= valor;
+				}
+				if((getSaldo() == 0) && (limite >= valor)){
+					limite -= valor;
+				}
+				if((getSaldo() == 0) && (limite < valor) && (limite != 0)){
+				//if(limite < valor){
+					System.out.println("Limite inferior ao valor do saque");
+				}
+				
+			}
+		}else{
+			System.out.println("Valor de saque invalido");
 		}
+		
+
 	}
 	public String toString(){
 		
