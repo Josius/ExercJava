@@ -17,11 +17,12 @@ public class ContaEspecial extends ContaBancaria{
 			if(getSaldo() < valor){
 				if((getSaldo() > 0) && (limite >= valor)){
 					valor -= getSaldo();
-					setSaldo(0.0);
+					setSaldo(-valor);
 					limite -= valor;
 				}
 				if((getSaldo() == 0) && (limite >= valor)){
 					limite -= valor;
+					setSaldo(-valor);
 				}
 				if((getSaldo() == 0) && (limite < valor) && (limite != 0)){
 				//if(limite < valor){
@@ -37,6 +38,6 @@ public class ContaEspecial extends ContaBancaria{
 	}
 	public String toString(){
 		
-		return Double.toString(getSaldo());
+		return  "\n"   + "\nNome do Cliente: " + getNomeCliente() + "\nNumero da Conta: " + getNumConta() + "\nSaldo: " + Double.toString(getSaldo()) + "\nLimite: " + Double.toString(limite) + "\nNome do Cliente: " + getNomeCliente() + "\nNumero da Conta: " + getNumConta();
 	}
 }
