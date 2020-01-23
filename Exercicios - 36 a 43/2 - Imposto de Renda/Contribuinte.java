@@ -1,34 +1,23 @@
-public class Contribuinte{
-	private String nome;
-	private double renda;
-	private int[] contribuinte;
+import java.util.Arrays;
+
+public abstract class Contribuinte{
+	private String[] nome;
 	
 	public Contribuinte(){
-		contribuinte = new int[6];
+		nome = new String[6];
 	}
 	
-	public String getNome(){
+	public String[] getNome(){
 		return nome;
 	}
-	public void setNome(String nome){
+	public void setNome(String[] nome){
 		this.nome = nome;
 	}
-	
-	public double getRenda(){
-		return renda;
-	}
-	public void setRenda(double renda){
-		this.renda = renda;
-	}
-	
-	public int[] getContribuinte(){
-		return contribuinte;
-	}
-	public void setContribuinte(int[] contribuinte){
-		this.contribuinte = contribuinte;
+	public void setNomePos(int pos, String nome){
+		this.nome[pos] = nome;
 	}
 	
 	public String toString(){
-		
+		return Arrays.toString(nome) ;
 	}
 }

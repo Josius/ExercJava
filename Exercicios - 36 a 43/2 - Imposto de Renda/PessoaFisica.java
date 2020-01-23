@@ -7,7 +7,7 @@ public class PessoaFisica extends Contribuinte{
 	public void setImpostoPF(double impostoPF){
 		this.impostoPF = impostoPF;
 	}
-	
+	/*
 	public void calcularImpostoPF(getRenda()){
 		if(getRenda() <= 1400){
 			System.out.println("Nao ha imposto a ser calculado");
@@ -21,5 +21,5 @@ public class PessoaFisica extends Contribuinte{
 			impostoPF = (getRenda()*30)/100 + getRenda();
 		}
 		
-	}
+	}*/
 }
