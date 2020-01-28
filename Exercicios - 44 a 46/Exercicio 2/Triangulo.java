@@ -1,6 +1,11 @@
-public class Piramide extends Figura3D{
-	private double base;
+public class Triangulo extends Figura2D{
 	private double altura;
+	private double base;
+	private double area;
+
+	public double getArea(){
+		return area;
+	}
 	
 	public int getBase(){
 		return base;
@@ -15,4 +20,10 @@ public class Piramide extends Figura3D{
 	public void setAltura(int altura){
 		this.altura = altura;
 	}
+	
+	public void calcularArea(){
+		area = (base*altura)/2
+	}
+	
+	
 }
